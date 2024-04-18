@@ -3,6 +3,7 @@ import Description from "../Description/Description"
 import Options from "../Options/Options"
 import Feedback from "../Feedback/Feedback"
 import Notification from "../Notifications/Notifications";
+import css from "./App.module.css"
 
 const stateFeedback = {
     good: 0,
@@ -37,7 +38,7 @@ export default function App (){
       }, [feedback]);
     
       return (
-        <div>
+        <div className={css.container}>
           <Description />
     
           <Options
